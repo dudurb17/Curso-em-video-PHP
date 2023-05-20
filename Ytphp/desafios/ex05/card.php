@@ -18,8 +18,9 @@
 <body>
     <main>
         <h1>Analisador de Número Real</h1>
-        <p>Analisando o número <s><?php echo $num;?></s> informado pelo usuário:</p>
-        <p>&bull;A parte inteira do número é</p>
+        <p>Analisando o número <b><?php echo $num;?></b> informado pelo usuário:</p>
+        <p>&bull;A parte inteira do número é <b><?php echo $numF;?></b></p>
+        <p>&bull;A parte fracionada do número é <b><?php echo $parteFracionada;?></b></p>
     </main>
 </body>
 
