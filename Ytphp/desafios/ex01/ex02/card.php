@@ -24,7 +24,7 @@ $num = $_GET['num']?? 0;
         echo '<p>O seu sucessor é <b>' . $num+1  . '</b></p>';
         ?>
         <button onclick="history.go(-1);">
-            &larr; Voltar
+            &#x2B05; Voltar
         </button>
     </main>
 </body>
