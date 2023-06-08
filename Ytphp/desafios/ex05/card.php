@@ -1,5 +1,5 @@
 <?php 
-    $num=$_POST["valor"];
+    $num=$_POST["valor"]?? 0;
     $numF=floor($num);
     $parteFracionada=$num-$numF;
 ?>
@@ -18,9 +18,9 @@
 <body>
     <main>
         <h1>Analisador de Número Real</h1>
-        <p>Analisando o número <b><?php echo $num;?></b> informado pelo usuário:</p>
-        <p>&bull;A parte inteira do número é <b><?php echo $numF;?></b></p>
-        <p>&bull;A parte fracionada do número é <b><?php echo $parteFracionada;?></b></p>
+        <p>Analisando o número <b><?php echo number_format($num,3, ",",".") ;?></b> informado pelo usuário:</p>
+        <p>&bull;A parte inteira do número é <b><?php echo number_format($numF, 0, ",",".") ;?></b></p>
+        <p>&bull;A parte fracionada do número é <b><?php echo number_format($parteFracionada,3, ",",".");?></b></p>
     </main>
 </body>
 
