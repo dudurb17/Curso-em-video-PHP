@@ -21,6 +21,7 @@
         <p>Analisando o número <b><?php echo number_format($num,3, ",",".") ;?></b> informado pelo usuário:</p>
         <p>&bull;A parte inteira do número é <b><?php echo number_format($numF, 0, ",",".") ;?></b></p>
         <p>&bull;A parte fracionada do número é <b><?php echo number_format($parteFracionada,3, ",",".");?></b></p>
+        <button onclick="window.location.href = 'index.html'">Voltar</button>
     </main>
 </body>
 
